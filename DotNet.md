@@ -36,3 +36,13 @@ namespace LearningDotNet
     }
 }
 ```
+
+### Example - Dictionary
+(Starting from this example, the main functin will will ignored)
+```C#
+Dictionary<Strnig, String> config = new Dictionary<string, string>();
+config.Add("resolutioin", "1920x1080");
+config.Add("title", "Mywebsite");
+
+Console.WriteLine(config["title"]);
+```
