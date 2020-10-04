@@ -2,17 +2,18 @@
 Nothing here at the moment
 
 # Request
-## Discovery
+### Discovery
 * Type in the following commands
 ```REST
 OPTIONS http://restful.dev/wp-json/wp/v2.posts
 ```
 * You will see all the available commands
 
-##.  Resource
+### Resource
 Something more coming after
 
 # Response
+### HEAD
 * see the following codes
 ``` REST
 HEAD http://restful.dev/wp-json/wp/v2/posts
