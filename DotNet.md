@@ -1,4 +1,6 @@
 # Introduction
+* One great feature about C# is that it has a grabage collector, that you dont 
+  need to free up the memories you allocated
 
 ### Garbage Collection
 * App might slow down or crash without garbage collection
@@ -45,4 +47,10 @@ config.Add("resolutioin", "1920x1080");
 config.Add("title", "Mywebsite");
 
 Console.WriteLine(config["title"]);
+
+foreach (var setting in config)
+{
+    Console.WriteLine(setting.Value);
+}
+```
 ```
