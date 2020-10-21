@@ -13,7 +13,7 @@ attach(A1_variates)
 set.seed(20763179)
 
 ### (a)
-```{r beta_hat_4, echo=false}
+```R{r beta_hat_4, echo=false}
 epsilon <- rnorm(24, 0, 15000)
 Beta <- c(-250000,50,-200,12000,200000) 
 X <- as.matrix(cbind(rep(1,4),A1_variates)) 
