@@ -7,22 +7,29 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Question 1
+A1_variates=read.table("A1_variates.txt",header=T) 
+attach(A1_variates)
+set.seed(20763179)
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+### (a)
+```{r beta_hat_4, echo=false}
+epsilon <- rnorm(24, 0, 15000)
+Beta <- c(-250000,50,-200,12000,200000) 
+X <- as.matrix(cbind(rep(1,4),A1_variates)) 
+y <- X%*%Beta + epsilon
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+beta = array(0,c(5,1000)) #creates an array to store sets of estimators
 
-```{r cars}
-summary(cars)
+for (i in 1:1000){
+  y<-X%*%Beta+rnorm(24,0,15000) #X and Beta as defined in 2a) of A1
+  A1sim.lm<-lm(y~size+age+employees+col)
+  beta[,i]<-coef(A1sim.lm) #yields the estimates for each iteration
+}
+#the resulting (5 x 1000) matrix contains the beta estimates for the 1000 repetitions. 
+
+beta_hat_4 <- beta[5,]
+hist(beta_hat_4)
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
