@@ -40,5 +40,18 @@ $ django-admin startproject trydjangoc .
 python manage.py runserver
 ```
 
+```
+January 12, 2021 - 23:15:50
+Django version 2.0.7, using settings 'trydjango.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+^[[D[12/Jan/2021 23:16:17] "GET / HTTP/1.1" 200 16348
+[12/Jan/2021 23:16:17] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[12/Jan/2021 23:16:17] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[12/Jan/2021 23:16:17] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[12/Jan/2021 23:16:17] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+Not Found: /favicon.ico
+[12/Jan/2021 23:16:17] "GET /favicon.ico HTTP/1.1" 404 1975
+```
 # References
 Reference videos https://www.youtube.com/watch?v=F5mRW0jo-U4
