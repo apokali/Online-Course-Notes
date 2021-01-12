@@ -65,6 +65,14 @@ $ python manage.py migrate
 $ python manage.py createsuperuser
 ```
 
+# start projects
+```bash
+# You can name whatever names you want
+$ python manage.py startapp cart
+$ python manage.py startapp products
+
+```
+
 
 # References
 Reference videos https://www.youtube.com/watch?v=F5mRW0jo-U4
