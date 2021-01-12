@@ -54,5 +54,7 @@ Quit the server with CONTROL-C.
 Not Found: /favicon.ico
 [12/Jan/2021 23:16:17] "GET /favicon.ico HTTP/1.1" 404 1975
 ```
+
+Then you can access the landing page at http://127.0.0.1:8000/, try it in a web browser.
 # References
 Reference videos https://www.youtube.com/watch?v=F5mRW0jo-U4
