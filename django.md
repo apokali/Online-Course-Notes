@@ -74,7 +74,16 @@ $ python manage.py startapp products
 ```
 * Go to folder products
 * Go to models.py
+* Modify the files and add more class and class attributes
 
+```py
+# Create your models here.
+class Product(model.Model):
+    title       = models.TextField()
+    description = models.TextField()
+    price       = models.TextField()
+
+```
 
 # References
 Reference videos https://www.youtube.com/watch?v=F5mRW0jo-U4
