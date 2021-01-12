@@ -104,6 +104,7 @@ INSTALLED_APPS = [
 * Then in the terminal, do the following
 ```bash
 $ python manage.py makemigrations
+$ python manage.py migrate
 
 ```
 
