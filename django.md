@@ -110,5 +110,13 @@ $ python manage.py migrate
 ### Notice
 Every time when you make changes, you need to make migrations and migrate.
 
+### Change views
+* Go to views.py under products
+* Add following codes
+```py
+# Create your views here.
+from .models import Product
+```
+
 # References
 Reference videos https://www.youtube.com/watch?v=F5mRW0jo-U4
