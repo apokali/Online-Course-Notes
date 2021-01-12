@@ -60,7 +60,9 @@ Not Found: /favicon.ico
 
 # Create users
 ```bash
-
+# under src folder
+$ python manage.py migrate
+$ python manage.py createsuperuser
 ```
 
 
