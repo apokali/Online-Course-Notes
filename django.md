@@ -40,6 +40,7 @@ $ django-admin startproject trydjangoc .
 python manage.py runserver
 ```
 
+yields the following outputs
 ```
 January 12, 2021 - 23:15:50
 Django version 2.0.7, using settings 'trydjango.settings'
