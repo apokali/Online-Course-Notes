@@ -82,6 +82,28 @@ class Product(model.Model):
     title       = models.TextField()
     description = models.TextField()
     price       = models.TextField()
+```
+
+### Migrate changes
+* Go to settings.py and add your own apps
+```py
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+
+    # third party
+
+    # own
+    'products',
+]
+```
+* Then in the terminal, do the following
+```bash
+$ python manage.py makemigrations
 
 ```
 
