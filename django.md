@@ -22,16 +22,23 @@ $ deactivate
 ```
 
 # Creating projects
+### Start projects
 ```bash
 # prints a list of available subcommands
 $ django-admin
 
 $ mkdir src
 $ cd src
+
 # Create projects
 $ django-admin startproject trydjangoc .
 ```
 
+### Access web
+```bash
+# To access web
+python manage.py runserver
+```
 
 # References
 Reference videos https://www.youtube.com/watch?v=F5mRW0jo-U4
