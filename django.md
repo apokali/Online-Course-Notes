@@ -5,7 +5,7 @@ To set up django environments, see the following codes
 $ ls 
 $ virtualenv -p python3 .
 ```
-## Start virtual environment
+### Start virtual environment
 ``` bash
 # Then you need activate your django environment
 $ source bin/activate
@@ -16,7 +16,7 @@ Then you need to install the django environment
 $ pip install django==2.0.7
 ```
 
-## End virtual environment
+### End virtual environment
 ```bash
 $ deactivate
 ```
