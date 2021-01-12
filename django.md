@@ -72,6 +72,8 @@ $ python manage.py startapp cart
 $ python manage.py startapp products
 
 ```
+* Go to folder products
+* Go to models.py
 
 
 # References
