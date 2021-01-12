@@ -105,8 +105,10 @@ INSTALLED_APPS = [
 ```bash
 $ python manage.py makemigrations
 $ python manage.py migrate
-
 ```
+
+### Notice
+Every time when you make changes, you need to make migrations and migrate.
 
 # References
 Reference videos https://www.youtube.com/watch?v=F5mRW0jo-U4
