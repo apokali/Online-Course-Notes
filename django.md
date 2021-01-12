@@ -20,5 +20,18 @@ $ pip install django==2.0.7
 ```bash
 $ deactivate
 ```
+
+# Creating projects
+```bash
+# prints a list of available subcommands
+$ django-admin
+
+$ mkdir src
+$ cd src
+# Create projects
+$ django-admin startproject trydjangoc .
+```
+
+
 # References
 Reference videos https://www.youtube.com/watch?v=F5mRW0jo-U4
