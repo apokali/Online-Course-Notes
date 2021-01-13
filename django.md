@@ -124,7 +124,7 @@ admin.site.register(Product)
 $ python manage.py shell
 >>> from products.models import Product
 >>> Product.objects.all()
->>> Product.objects.create()
+>>> Product.objects.create(title='New producr 3', description='another one', price='123')
 ```
 
 # References
