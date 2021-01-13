@@ -124,6 +124,7 @@ This is another way to create data entries
 ```bass
 $ python manage.py shell
 >>> from products.models import Product
+# prints a list of all projects
 >>> Product.objects.all()
 >>> Product.objects.create(title='New producr 3', description='another one', price='123')
 ```
