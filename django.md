@@ -119,5 +119,13 @@ from .models import Product
 admin.site.register(Product)
 ```
 
+# Create Producr Objects in the Python shell
+```bash
+$ python manage.py shell
+>>> from products.models import Product
+>>> Product.objects.all()
+>>> Product.objects.create()
+```
+
 # References
 Reference videos https://www.youtube.com/watch?v=F5mRW0jo-U4
