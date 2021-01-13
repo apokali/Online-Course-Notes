@@ -110,11 +110,11 @@ $ python manage.py migrate
 ### Notice
 Every time when you make changes, you need to make migrations and migrate.
 
-### Change views
-* Go to views.py under products
+### Change admin register
+* Go to admin.py under products
 * Add following codes
 ```py
-# Create your views here.
+# Register your models here.
 from .models import Product
 admin.site.register(Product)
 ```
