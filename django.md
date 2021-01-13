@@ -116,6 +116,7 @@ Every time when you make changes, you need to make migrations and migrate.
 ```py
 # Create your views here.
 from .models import Product
+admin.site.register(Product)
 ```
 
 # References
