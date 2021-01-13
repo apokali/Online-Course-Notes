@@ -120,7 +120,8 @@ admin.site.register(Product)
 ```
 
 # Create Producr Objects in the Python shell
-```bash
+This is another way to create data entries 
+```bass
 $ python manage.py shell
 >>> from products.models import Product
 >>> Product.objects.all()
