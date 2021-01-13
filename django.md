@@ -37,7 +37,7 @@ $ django-admin startproject trydjangoc .
 ### Access web
 ```bash
 # Run Server
-python manage.py runserver
+$ python manage.py runserver
 ```
 
 yields the following outputs
