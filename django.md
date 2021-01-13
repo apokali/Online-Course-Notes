@@ -34,7 +34,7 @@ $ cd src
 $ django-admin startproject trydjangoc .
 ```
 
-### Access web
+### Run server
 ```bash
 # Run Server
 $ python manage.py runserver
