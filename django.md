@@ -128,6 +128,21 @@ $ python manage.py shell
 >>> Product.objects.all()
 >>> Product.objects.create(title='New producr 3', description='another one', price='123')
 ```
+* To exit, hit Ctr + D or enter exit()
+
+# More Model Field Types
+* Revisit the models.py under produts, many model filed types can be choosen
+```py
+# Create your models here.
+class Product(models.Model):
+    title       = models.CharField(max_length=120)  # maxlength is required
+    description = models.TextField(blank=True, null=True)
+    price       = models.TextField()
+    summary     = models.TextField(default="this is cool")
+```
+
+### Notice
+For more documentation, visit https://docs.djangoproject.com/en/3.1/ref/models/fields/
 
 # References
 Reference videos https://www.youtube.com/watch?v=F5mRW0jo-U4
