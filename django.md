@@ -159,9 +159,15 @@ class Product(models.Model):
 ```
 
 # Customize landing pages
+* First create apps
 ```bash
 # create new apps
 $ python manage.py startapp pages
+```
+
+* Then under views.py
+```py
+
 ```
 
 # References
