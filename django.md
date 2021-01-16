@@ -155,5 +155,11 @@ class Product(models.Model):
     featured    = models.BooleanField()
 ```
 
+# Customize landing pages
+```bash
+# create new apps
+$ python manage.py startapp pages
+```
+
 # References
 Reference videos https://www.youtube.com/watch?v=F5mRW0jo-U4
