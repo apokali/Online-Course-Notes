@@ -173,6 +173,9 @@ from django.shortcuts import render
 # Create your views here.
 def home_view(*args, **kwargs):
     return HttpResponse("<h1>Hello World!</h1>") # string of HTML code
+
+def contact_view(*args, **kwargs):
+    return HttpResponse("<h1>Contact Page</h1>")
 ```
 
 ### Notice
@@ -181,12 +184,14 @@ How to find the root URLs? This is in the urls.py under your ProjectName folder,
 # First to import the pages you have done the last step
 # from pages import views
 from pages.views import home_view
+from pages.views import contact_view
 
 urlpatterns = [
-    # add more path settings here
-    path('', views.home_view, name='home'), # '' means the url is empty here
+    path('', home_view, name='home'),
+    path('contact/', contact_view),
     path('admin/', admin.site.urls),
 ]
+
 ```
 
 
