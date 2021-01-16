@@ -144,5 +144,16 @@ class Product(models.Model):
 ### Notice
 For more documentation, visit https://docs.djangoproject.com/en/3.1/ref/models/fields/
 
+### More examples
+```py
+# Create your models here.
+class Product(models.Model):
+    title       = models.CharField(max_length=120)  # maxlength is required
+    description = models.TextField(blank=True, null=True)   # blank means that blank is allowed
+    price       = models.TextField()
+    summary     = models.TextField(blank=True, null=False)
+    featured    = models.BooleanField()
+```
+
 # References
 Reference videos https://www.youtube.com/watch?v=F5mRW0jo-U4
