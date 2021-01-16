@@ -1,5 +1,5 @@
 ### Table of Contents
-[Setups]()
+[Setups](https://github.com/apokali/Online-Course-Notes/blob/main/django.md#setups)
 
 # Setups
 To set up django environments, see the following codes
