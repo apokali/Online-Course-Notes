@@ -1,3 +1,6 @@
+### Table of Contents
+[Setups]()
+
 # Setups
 To set up django environments, see the following codes
 ```bash
