@@ -179,7 +179,8 @@ def home_view(*args, **kwargs):
 How to find the root URLs? This is in the urls.py under your ProjectName folder, which is trydhango in this context.
 ```py
 # First to import the pages you have done the last step
-from pages import views
+# from pages import views
+from pages.views import home_view
 
 urlpatterns = [
     # add more path settings here
