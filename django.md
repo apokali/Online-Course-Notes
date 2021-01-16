@@ -192,8 +192,34 @@ urlpatterns = [
     path('contact/', contact_view),
     path('admin/', admin.site.urls),
 ]
-
 ```
+
+# django Templates
+Under the home.views.py
+```py
+def home_view(request, *args, **kwargs):
+    print(args, kwargs)
+    print(request.user)
+    #return HttpResponse("<h1>Hello World!</h1>") # string of HTML code
+    return render(request, "home.html", {})
+```
+* Create the templates folder and create home.html file
+* Go to settings.py and change the path to the templates
+```py
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
+        'APP_DIRS': True,
+        'OPTIONS': { #...
+```
+
+### Notice
+Or alternatively, you can write the following
+```py
+'DIRS': [/Users/Apocalypto/Sites/django/src/templates],
+```
+but this is not recommended.
 
 
 # References
