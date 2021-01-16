@@ -36,7 +36,7 @@ $ django-admin startproject trydjangoc .
 
 ### Run server
 ```bash
-# Run Server
+# Run Server, be sure you are in the src folder
 $ python manage.py runserver
 ```
 
