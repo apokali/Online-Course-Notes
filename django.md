@@ -165,7 +165,7 @@ class Product(models.Model):
 $ python manage.py startapp pages
 ```
 
-* Then under views.py
+* Then under views.py, modify the files
 ```py
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -174,6 +174,20 @@ from django.shortcuts import render
 def home_view(*args, **kwargs):
     return HttpResponse("<h1>Hello World!</h1>") # string of HTML code
 ```
+
+### Notice
+How to find the root URLs? This is in the urls.py under your ProjectName folder, which is trydhango in this context.
+```py
+# First to import the pages you have done the last step
+from pages import views
+
+urlpatterns = [
+    # add more path settings here
+    path('', views.home_view, name='home'),
+    path('admin/', admin.site.urls),
+]
+```
+
 
 # References
 Reference videos https://www.youtube.com/watch?v=F5mRW0jo-U4
