@@ -183,8 +183,7 @@ How to find the root URLs? This is in the urls.py under your ProjectName folder,
 ```py
 # First to import the pages you have done the last step
 # from pages import views
-from pages.views import home_view
-from pages.views import contact_view
+from pages.views import home_view, contact_view
 
 urlpatterns = [
     path('', home_view, name='home'),
