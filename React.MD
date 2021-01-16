@@ -1,7 +1,7 @@
 # Introduction
 ```js
-impoer React from "react"
-impoer ReactDOM from "react-dom"
+import React from "react"
+import ReactDOM from "react-dom"
 
 ReactDOM.render(What do i want to redner, where do i want to render)
 ```
