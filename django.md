@@ -183,7 +183,7 @@ from pages import views
 
 urlpatterns = [
     # add more path settings here
-    path('', views.home_view, name='home'),
+    path('', views.home_view, name='home'), # '' means the url is empty here
     path('admin/', admin.site.urls),
 ]
 ```
